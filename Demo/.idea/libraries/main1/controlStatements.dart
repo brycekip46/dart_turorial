@@ -1,5 +1,6 @@
 void main() {
   var age = 19;
+
   //condition
   if (age < 18) {
     print("You are a minor. Not allowed to drink");
@@ -24,7 +25,8 @@ print("your grade is B and marks is $marks");
   b=23;
   a>b ? print("$a is greater "): print("$b is greater");
 
-  var grade = null;
+  var grade =null;
+  print(grade.toString().length);
   var gradePrint = grade??"F";
   print(gradePrint);
 }
