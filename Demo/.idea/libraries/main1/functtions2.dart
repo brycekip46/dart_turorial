@@ -28,6 +28,12 @@ void displayMarks ({var m1,var m2,var m3,var m4,var m5}){
   print("Sub 5: $m5");
 
 }
+//Default parameters
+//provides a parameter if not added
+String displayName(String fName,{String sName="Doe"}){
+ return  fName+sName;
+}
+
 
 
 void main(){
@@ -37,6 +43,7 @@ void main(){
   name2="Kip";
 
   displayNames(name1, name2);
+  displayName(name1);
   int age = returnAge(dob);
   print("Your age is $age");
   //Does not evoke a compile time error when run
