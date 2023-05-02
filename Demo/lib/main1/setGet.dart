@@ -1,13 +1,22 @@
 class Animal {
   String? classType;
- // int? legs;
+  //private field
+  int? _legs;
 
-  void set legs(int? nlegs) {
-    legs=nlegs;
+  //setter for
+  set legs(int? nlegs) {
+    _legs = nlegs;
   }
+
+  int? get legs => _legs;
 }
 
 void main() {
-  var dog = new Animal();
-  dog.legs = 5;
+  try {
+    var dog = new Animal();
+    dog.legs = 5;
+    print(dog.legs); // Output: 5
+  } catch (e) {
+    print(e);
+  }
 }
