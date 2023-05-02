@@ -5,6 +5,10 @@ class Vehicle{
   Vehicle(){
     print("Calls the default constructor");
   }
+  Vehicle.a(String type, String? model){
+    print("Calls parameterized constructor:");
+  }
+
 
   void move(){
 
@@ -18,7 +22,9 @@ class Vehicle{
 
 }
 void main(){
-  Vehicle v1 = Vehicle();
+  Vehicle v1 = Vehicle.a(" ", "model");
+  Vehicle v2 = Vehicle();
+
   v1.type="Mercedes";
 
 }
