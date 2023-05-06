@@ -24,7 +24,16 @@ class currentAcc extends Account{
   @override
   void withdraw() {
     // TODO: implement withdraw
-  }
+print("Enter amount you wish to withdraw");
+int amount =int.parseInt(stdin.readLineSync()!);
+
+if(balance <=amount){
+balance=balance-amount;
+print("Withdrawal successfull");
+
+  } else {
+print("insufficient  balance:");
+}
 
 }
 class savingAccount extends Account{
