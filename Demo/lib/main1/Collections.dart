@@ -24,7 +24,13 @@ var marks2 = [];
 marks2.add(3);
 
 //Type:Set and HashSet
-
+//A Set defines a collection of unordered elements 
+//Items are not stored in an indexed location
+   var names = {"James","Ricky","Devansh","Adam"};   
+   // Declaring empty set  
+   var emp = <String>{};  
+   emp.add("Jonathan");
+   e
 
 
 }
