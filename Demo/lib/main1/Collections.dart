@@ -52,7 +52,7 @@ marks2.add(3);
   print(passUser.keys);
   print(passUser.length);
   passUser.remove("Joash");
-
+passUser.clear();
 
 
 }
